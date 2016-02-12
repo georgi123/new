@@ -1,0 +1,10 @@
+select url from pattern where type='URL' and url like '%/%' and url not like '^%' and version_id='8015' INTO OUTFILE '/home/plamen.y/Results3.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';
+select url from pattern where type='URL' and url not like '%.%' and url not like '^%' and version_id='8015' INTO OUTFILE '/home/plamen.y/Results4.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';
