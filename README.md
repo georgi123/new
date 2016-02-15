@@ -1,5 +1,6 @@
 # new
-# testove
+
+
 echo "# $repo" >> README.md
 git init
 git add README.md
